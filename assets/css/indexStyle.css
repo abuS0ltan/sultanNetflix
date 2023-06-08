@@ -1,0 +1,239 @@
+
+:root{
+    --backColor:linear-gradient(65.68deg, rgba(0, 8, 29, 0.6) 9.51%, rgba(53, 13, 49, 0.6) 72.89%, rgba(132, 5, 25, 0.6) 101.01%),linear-gradient(102.21deg, rgba(0, 0, 0, 0.04) 16.09%, rgba(1, 1, 1, 0.17) 39.27%, rgba(1, 1, 1, 0.24) 64.25%, rgba(4, 4, 4, 0.8) 96.63%);
+    --backColor2:linear-gradient(146.51deg, rgba(0, 8, 29, 0.75) 0%, rgba(53, 13, 49, 0.6) 80.34%, rgba(132, 5, 25, 0.6) 110.79%);
+}
+/* -------------------------- start background -------------------------- */
+
+.overlay{
+    position: fixed;
+    background-color: rgb(2,8,30);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -9999;
+}
+
+.container-fluid{
+    padding: 0 2rem;
+}
+.contentOverlay{
+    background: var(--backColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.myContainer{
+    padding: 0 5rem;
+}
+/* -------------------------- end background -------------------------- */
+
+/* -------------------------- start navbar -------------------------- */
+
+.navbar .nav-item .nav-link{
+    background-color: var(--mainColor);
+    border-radius: .325rem;
+    -webkit-border-radius: .325rem;
+    -moz-border-radius: .325rem;
+    -ms-border-radius: .325rem;
+    -o-border-radius: .325rem;
+    font-size: .8rem;
+    font-weight: 500;
+    color: white;
+    margin-left: 1rem;
+    padding: .6rem 1rem;
+}
+
+
+/* -------------------------- end navbar -------------------------- */
+
+/* -------------------------- start header -------------------------- */
+.headerContent{
+    z-index: 99;
+}
+.header{
+    background-image: url('../image/PS-en-20230522-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    padding: 6rem 15rem 7rem 5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-size: cover;
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+.mainTitle{
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.plan{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.ready{
+    font-size: 1.35rem;
+    color: white;
+}
+
+
+.formDiv .form-control{
+    margin-right: 1rem;
+    display: inline-block;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.7);
+    border: var(--secandaryColor) solid 1px;
+    border-radius: .325rem;
+    -webkit-border-radius: .325rem;
+    -moz-border-radius: .325rem;
+    -ms-border-radius: .325rem;
+    -o-border-radius: .325rem;
+}
+.formDiv .form-control:focus{
+    border: white solid 2px;
+}
+.btn{
+    display: inline-block;
+    white-space: nowrap;
+    background-color: var(--mainColor);
+    border: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: .8rem 1.5rem;
+    border-radius: .325rem;
+    -webkit-border-radius: .325rem;
+    -moz-border-radius: .325rem;
+    -ms-border-radius: .325rem;
+    -o-border-radius: .325rem;
+}
+.btn:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+/* -------------------------- end header -------------------------- */
+
+/* -------------------------- start story -------------------------- */
+
+
+
+
+.storys{
+    background: var(--backColor2);
+    margin-top: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    padding: 1rem 0;
+}
+.storys .row{
+    align-items: center;
+}
+.storyImg img{
+    width: 100%;
+}
+.storyTitle{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.storyInfo .info{
+    color: white;
+    padding-top: .3rem;
+}
+.story{
+    border-bottom: solid .5rem rgba(255, 255, 255, 0.1);
+    padding: 1rem 0rem;
+}
+.story.last{
+    border: none;
+}
+/* -------------------------- end story -------------------------- */
+
+
+
+/* -------------------------- start faq -------------------------- */
+.faq{
+    margin-top: 5rem;
+}
+.faqTitle{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.faq .accordion-header .accordion-button{
+    background-color: rgb(19,33,68);
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1px;
+    padding: 1.5rem;
+    position: relative;
+    border-bottom-color: transparent;
+}
+.faq .accordion-header .accordion-button i{
+    position: absolute;
+    right: 3rem;
+}
+.faq .accordion-item{
+background-color: transparent;
+}
+.faq .accordion-body{
+    background-color: rgb(19,33,68);
+    color: white;
+    font-size: 1.5rem;
+}
+.faq .accordion-header .accordion-button:hover{
+    background-color: rgb(34,51,98);
+}
+.accordion-item{
+    margin-bottom: .5rem;
+    border: none;
+}
+.faq .accordion-header .accordion-button:focus{
+    box-shadow: none;
+}
+
+.faq .accordion-header .accordion-button::after{
+    background-image: unset;
+}
+.faq .formDiv .form-control{
+    background-color: rgba(70, 90, 126, 0.4)    ;
+}
+/* -------------------------- end faq -------------------------- */
+
+/* -------------------------- start footer -------------------------- */
+
+.form-select{
+    padding: .4rem 2rem .4rem 2.5rem;
+    color: white;
+    border: var(--secandaryColor) solid 1px;
+    border-radius: .325rem;
+    -webkit-border-radius: .325rem;
+    -moz-border-radius: .325rem;
+    -ms-border-radius: .325rem;
+    -o-border-radius: .325rem;
+}
+.selectLang i{
+    color: white;
+}
+.question , .footer .footerLink{
+    color: rgba(255, 255, 255, 0.7);
+}
+/* -------------------------- end footer -------------------------- */

@@ -1,0 +1,112 @@
+:root{
+    --newColor:rgb(51, 51, 51);
+}
+
+/* -------------------------- start background -------------------------- */
+
+.overlay{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* -------------------------- end background -------------------------- */
+
+
+/* -------------------------- start navbar -------------------------- */
+
+.navbar{
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.navbar .nav-item{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--newColor);
+    padding-right: 2rem;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+/* -------------------------- end navbar -------------------------- */
+
+
+/* -------------------------- start form -------------------------- */
+
+.formDiv{
+    background-color: transparent;
+}
+.title{
+    color: var(--newColor);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+.step{
+    font-size: .8rem;
+    font-weight: 600;
+}
+.info{
+    color: var(--newColor);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.formDiv .form-control{
+    background-color: transparent;
+    border: 1px solid var(--newColor);
+}
+.helpDiv .mb-3 .form-label{
+    color: var(--newColor);
+    font-size: 1.1rem;
+    white-space: nowrap;
+    padding-left: 1.2rem;
+}
+
+.helpDiv .mb-3 .form-check-input{
+    background-color: transparent;
+    color: black;
+    border: 1px solid;
+    padding: .8rem;
+    border-radius: .125rem;
+    -webkit-border-radius: .125rem;
+    -moz-border-radius: .125rem;
+    -ms-border-radius: .125rem;
+    -o-border-radius: .125rem;
+}
+
+.form-check-input:checked[type=checkbox] {
+    --bs-form-check-bg-image: url("../image/download.png");
+  }
+
+.formDiv .btn{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+/* -------------------------- end form -------------------------- */
+
+
+/* -------------------------- start footer -------------------------- */
+
+.footer .overlay{
+    background-color: rgb(243, 243, 243);
+}
+.footer .form-select{
+    background-color: white;
+}
+.footer .form-select:focus{
+    box-shadow: none;
+    border: solid 2px black;
+}
+
+
+@media (max-width: 768px) { 
+    .overlay{
+        background-color: white;
+    }
+    .footer{
+        border-top: 1px solid rgb(230, 230, 230);
+    }
+ }
+/* -------------------------- end footer -------------------------- */

@@ -1,0 +1,114 @@
+:root{
+    --lableColor:rgb(140, 140, 140);
+    --mainColor:rgb(229,9,20);
+    --secandaryColor:rgb(115, 115, 115);
+
+}
+
+/* -------------------------- start navbar -------------------------- */
+
+.navbar .navbar-brand{
+    width: 15%;
+
+}
+.navbar .navbar-brand img{
+    width: 100%;
+}
+
+/* -------------------------- end navbar -------------------------- */
+
+/* -------------------------- start form  -------------------------- */
+/* --------------------------(make the lable change posthion)-------------------- */
+.formDiv .form-control{
+    background-color: rgb(51,51,51);
+    border: none;
+    color: white;
+    border-radius: .225rem;
+    -webkit-border-radius: .225rem;
+    -moz-border-radius: .225rem;
+    -ms-border-radius: .225rem;
+    -o-border-radius: .225rem;
+    padding: 1rem;
+}
+.formDiv .form-control:focus{
+    box-shadow: none;
+}
+.formDiv .mb-3{
+    position: relative;
+}
+.formDiv .mb-3 .form-label{
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: var(--lableColor);
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+    -ms-transition: .1s;
+    -o-transition: .1s;
+}
+/* -------------------------- end form  -------------------------- */
+
+/* -------------------------- start footer -------------------------- */
+
+.footer{
+    position: relative;
+    margin-top: 5rem;
+    padding: 2.5rem 0 5rem 0;
+    color: var(--secandaryColor);
+}
+.question , .footer .footerLink{
+    text-decoration: none;
+    color: var(--secandaryColor);
+    display: inline-block;
+}
+.question:hover , .footer .footerLink:hover{
+    text-decoration: underline;
+}
+
+.footerLink{
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+.questionDiv ,.linkDiv{
+    margin-bottom: 1.5rem;
+}
+
+.form-select{
+    width: fit-content;
+    background-color: black;
+    border-radius: .125rem;
+    -webkit-border-radius: .125rem;
+    -moz-border-radius: .125rem;
+    -ms-border-radius: .125rem;
+    -o-border-radius: .125rem;
+    border: var(--secandaryColor) solid 1px;
+    color: var(--secandaryColor);
+    padding: .8rem 2rem .8rem 2.5rem;
+    margin-bottom: 1rem;
+    
+}
+.form-select:focus{
+    box-shadow: none;
+    border: solid 2px white;
+}
+.selectLang{
+    position: relative;
+}
+.selectLang i{
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: var(--lableColor);
+}
+/* -------------------------- end footer -------------------------- */
